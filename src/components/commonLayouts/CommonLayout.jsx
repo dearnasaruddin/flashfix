@@ -4,9 +4,9 @@ import Header from "../Header"
 
 const CommonLayout = () => {
     return (
-        <div className="flex h-dvh bg-[linear-gradient(118.53deg,#020618_-34.38%,#162456_54.59%,#0F172B_143.57%)]">
+        <div className="flex h-dvh bg-[linear-gradient(118.53deg,#020618_-34.38%,#162456_54.59%,#0F172B_143.57%)] overflow-y-scroll">
             <Sidebar />
-            <div className="grow 2xl:grow-6">
+            <div className="grow">
                 <Header />
                 <div className="ml-6">
                     <Outlet />

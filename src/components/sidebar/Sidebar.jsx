@@ -1,12 +1,13 @@
+import {Link} from 'react-router-dom'
 import LogoutIcon from "../../assets/icons/LogoutIcon"
 import MenuItems from "./MenuItems"
 
 const Sidebar = () => {
 
     return (
-        <div className='2xl:grow h-full flex flex-col bg-primary pt-9.5 pb-13 border border-borderColor'>
+        <div className='h-full flex flex-col bg-primary pt-9.5 pb-13 border border-borderColor sticky top-0 left-0'>
             <div className="w-fit mx-auto">
-                <img src="./logo.svg" alt="logo" />
+                <Link to={'/'}><img src="./logo.png" alt="logo" /></Link>
             </div>
             {/* ============ Menu Items ============ */}
             <MenuItems />
