@@ -1,16 +1,79 @@
-# React + Vite
+# FlashFix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FlashFix** is a high-performance, modern web application built with React 19 and Vite. This project leverages the latest Tailwind CSS v4 for styling and Radix UI, Shadcn UI for accessible, high-quality interface components..
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Tech Stack
 
-## React Compiler
+* **Framework:** React 19
+* **Build Tool:** Vite
+* **Routing:** React Router 7
+* **Styling:** Tailwind CSS v4
+* **Icons:** Lucide React
+* **Charts:** Recharts
+* **UI Components:** Radix UI & Shadcn
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to set up and run the project locally on your machine:
+
+### Prerequisites
+Ensure you have **Node.js**(v18 or higher) installed on your system.
+
+This project uses **pnpm**(package manager). If you don't have it, install it. If already installed it skip this step.
+ ```bash
+npm install -g pnpm
+```
+
+#### a. Clone the Repository
+```bash
+git clone https://github.com/dearnasaruddin/flashfix.git
+```
+
+### b. go to the project directory
+```bash
+cd flashfix
+```
+
+#### c. Install Dependencies
+
+```bash
+pnpm install
+```
+
+### d. Start Development Server
+```bash
+pnpm dev
+```
+
+Once started, open http://localhost:5173 in your browser.
+
+## Available Scripts and Structure
+
+
+### Available Scripts
+
+| Command | Description |
+| :--- | :--- |
+| `pnpm dev` | Starts the development server. |
+| `pnpm build` | Builds the app for production. |
+| `pnpm preview` | Locally previews the production build. |
+| `pnpm lint` | Checks the code for linting errors. |
+
+
+### Project Structure
+
+* `public/` - Static assets and files(like logo).
+* `src/` - Main source code.
+* `src/assets/` - Assets (images and icons).
+* `src/components/` -  UI components.
+* `src/pages/` - Page-level route components
+* `src/projectData/` - Mock data or static project constants
+* `src/App.jsx` - Main application component
+* `src/index.css` - Global styles
+* `src/main.jsx` - Entry point
+
+
+---
+© 2026 FlashFix
