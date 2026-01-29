@@ -36,7 +36,7 @@ const Pagination = ({ totalItems, itemPerPage, currentPage, onPageChange }) => {
 
 
     return (
-        <div className='mt-4 md:mt-11.5 max-md:pb-8 md:mb-4.5 flex justify-center items-center text-xs md:text-base'>
+        <div className='mt-4 md:mt-11.5 max-md:pb-8 md:mb-4.5 flex max-xs:flex-wrap justify-center items-center text-xs md:text-base'>
 
             <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1} className={`flex items-center md:gap-2 p-2 ${currentPage == 1 ? 'text-[#697077] cursor-default' : 'text-[#0F62FE] cursor-pointer'} `}>
                 <ChevronLeft />

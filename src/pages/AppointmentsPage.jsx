@@ -4,7 +4,7 @@ import AppointmentTable from '@/components/appointmentTable/AppointmentTable'
 
 const AppointmentsPage = () => {
   return (
-    <div className='pr-6'>
+    <div className='pr-2 md:pr-6'>
       <div className='pt-6'>
         <AppointmentCards />
       </div>

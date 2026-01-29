@@ -26,7 +26,7 @@ const AppointmentTable = () => {
     }
     return (
         <div>
-            <div className='max-md:max-w-[72dvw] mt-8 rounded-[16px] overflow-hidden'>
+            <div className='max-md:max-w-[78dvw] max-md:mx-auto mt-8 rounded-[16px] overflow-hidden'>
                 <Table className={'text-white text-center'}>
                     <TableHeader>
                         <TableRow className={'border-[#162F61] bg-[#111b3b]'}>

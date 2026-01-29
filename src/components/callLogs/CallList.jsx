@@ -25,7 +25,7 @@ const CallList = ({ active, setActive }) => {
                             </div>
                         </div>
 
-                        <div className="flex items-center max-md:gap-2 md:gap-4.5 max-md:text-xs">
+                        <div className="flex items-center max-md:gap-2 md:gap-4.5 max-sm:text-[10px] max-md:text-xs">
                             <div className="flex items-center gap-1 text-gray">
                                 <div className="">
                                     <ClockLite />
@@ -39,7 +39,7 @@ const CallList = ({ active, setActive }) => {
                                 <p>{item.outcome}</p>
                             </div>
                             <div className="">
-                                <Badge className="bg-borderColor text-info rounded-sm py-0.5 px-4 font-inter leading-5 text-xs md:text-sm ">
+                                <Badge className="bg-borderColor text-info rounded-[4px] py-0.5 px-1 md:px-4 font-inter leading-5 text-xs md:text-sm ">
                                     {item.issueType}
                                 </Badge>
                             </div>
@@ -48,7 +48,7 @@ const CallList = ({ active, setActive }) => {
 
                     <div className="absolute top-2 right-2">
                         <Badge
-                            className={` rounded-[10px] py-1 px-2 font-inter leading-5 text-[10px] md:text-xs 
+                            className={`rounded-sm md:rounded-[10px] py-1 px-1 md:px-2 font-inter leading-5 text-[10px] md:text-xs 
                                 ${item.callType === "AI Resolved" && "text-green bg-[#00C95020] border border-[#00C95030] "}
                                 ${item.callType === "Warm Transfer" && "text-orange bg-[#FF690020] border border-[#FF690030] "}
                                 ${item.callType === "Appointment" && "text-info bg-borderColor border border-[#2B7FFF30] "}

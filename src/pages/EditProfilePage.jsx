@@ -5,7 +5,7 @@ import EditIcon from "@/assets/icons/EditIcon";
 
 const EditProfilePage = () => {
   return (
-    <div className="pt-6 max-w-250">
+    <div className="pt-6 max-w-250 max-md:pr-2">
       <div className="font-inter font-normal md:text-2xl md:leading-9 text-white flex gap-x-16 ml-3 border-b border-[#192D71] pb-2">
         <button className={"border-b-2 -mb-2 px-3 border-b-[#87A2FF]"}>
           Profile
@@ -31,7 +31,7 @@ const EditProfilePage = () => {
         <div className="grid md:grid-cols-2 md:gap-y-6 md:gap-x-14 mt-14">
           {profileForm.map((field, index) => (
             <div key={index} className="flex flex-col gap-2">
-              <label className="font-inter font-medium text-base md:text-lg leading-[150%] text-white">
+              <label className="font-inter font-medium  text-sm max-md:ml-1 md:text-lg leading-[150%] text-white">
                 {field.label}
               </label>
 
