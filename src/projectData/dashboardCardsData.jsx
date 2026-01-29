@@ -5,7 +5,7 @@ import CrossIconWithBG from "@/assets/icons/CrossIconWithBG";
 import PhoneIconWithBG from "@/assets/icons/PhoneIconWithBG";
 import TransferIconWithBG from "@/assets/icons/TransferIconWithBG";
 
-export const cardsData = [
+export const dashboardCardsData = [
     {
       title: 'Total Calls Today',
       value: '127',

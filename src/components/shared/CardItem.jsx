@@ -10,7 +10,7 @@ const CardItem = ({ preIcon, posIcon, value, title, percent,failed }) => {
           <p className="text-[#90a1b9] text-sm font-normal leading-5">{title}</p>
         </div>
         <p className="text-2xl leading-9 text-white "> {value}</p>
-        <p className={`${pathname === '/' ? failed ? 'text-[#fd244a]' : 'text-[#05df72]' : 'text-[#90a1b9]'} text-sm font-normal leading-5`}> {percent}</p>
+        <p className={`${pathname === '/' ? (failed ? 'text-[#fd244a]' : 'text-[#05df72]') : (String(percent).startsWith('+') ? 'text-[#05df72]': 'text-[#90a1b9]')} text-sm font-normal leading-5`}> {percent}</p>
       </div>
       {posIcon && <div className="">{posIcon}</div>}
     </div>

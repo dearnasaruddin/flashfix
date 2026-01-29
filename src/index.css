@@ -9,15 +9,27 @@
   --color-primary: #111b3c;
   --color-borderColor: #2B7FFF20;
   --color-green: #05df72;
+  --color-gray: #90a1b9;
+  --color-info: #50a2ff;
   --color-orange: #ff8904;
   --color-coral-red: #ff6467;
   --color-light-gray: #7a8ba4;
   --color-card-bg: #0f172b50;
 }
 
-.inset-shadow {
+.color-card {
+  @apply bg-[#0F172B50] border border-borderColor;
+}
+.audio-gradient {
+  @apply bg-linear-to-r from-[#ad46ff33] to-[#f6339a33];
+}
+
+.bg-dot-img {
   background-image: url(./assets/images/bg-dots.png);
   background-size: cover;
+}
+
+.inset-shadow {
   box-shadow: inset 0 0 5px #d2eaff80,
     inset 0 0 10px #d2eaff80,
     inset 0 0 15px #d2eaff80,
@@ -29,7 +41,14 @@
     0px 10px 20px #57b1ff1f,
     0px 12px 25px #57b1ff1f,
     0px 13px 50px #57b1ff1f,
-    0px 30px 80px #57b1ff1f  
+    0px 30px 80px #57b1ff1f
+}
+
+.inset-shadow-primary {
+  box-shadow: inset 0 0 5px #d2eaff88,
+    inset 0 0 10px #d2eaff88,
+    inset 0 0 15px #d2eaff88,
+    inset 0 0 20px #d2eaff88
 }
 
 @theme inline {
@@ -146,6 +165,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
