@@ -26,7 +26,7 @@ const ButtonMain = ({ icon, text, routeName, className, onClick, profile }) => {
                 {/* ============ Icons ============ */}
                 {
                     icon &&
-                    <span className="text-white flex items-center justify-center">
+                    <span className="text-white flex items-center justify-center size-7 md:size-8">
                         {icon}
                     </span>
                 }

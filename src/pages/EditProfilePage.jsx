@@ -48,7 +48,7 @@ const EditProfilePage = () => {
              {/* ===================== profile button ===================== */}
 
         <div className="mt-6 md:mt-20 flex items-center justify-center cursor-pointer">
-          <button className="py-2 max-md:w-full md:px-39 bg-[#00C950] font-inter font-bold text-[20px] leading-[150%] text-white rounded-[12px]">
+          <button className="py-2 max-md:w-full md:px-39 bg-[#00C950] font-inter font-bold  md:text-xl leading-[150%] text-white rounded-[12px]">
             Save
           </button>
         </div>

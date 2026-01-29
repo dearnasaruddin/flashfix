@@ -2,7 +2,7 @@
 
 const CalenderIcon = () => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.666 2.66699V8.00033" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M21.334 2.66699V8.00033" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M25.3333 5.33301H6.66667C5.19391 5.33301 4 6.52692 4 7.99967V26.6663C4 28.1391 5.19391 29.333 6.66667 29.333H25.3333C26.8061 29.333 28 28.1391 28 26.6663V7.99967C28 6.52692 26.8061 5.33301 25.3333 5.33301Z" stroke="white" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />

@@ -38,7 +38,7 @@ const Graph = () => {
         <div className="flex justify-between">
           {/* ========= Graph Heading & subHeading ========= */}
           <div>
-            <CardTitle className={"mb-1 text-white"}>Call Trends - This Week</CardTitle>
+            <CardTitle className={"mb-1 text-white max-md:leading-[150%]"}>Call Trends - This Week</CardTitle>
             <CardDescription className={'text-sm leading-5 text-[#90A1B9]'}>Total: 472 calls</CardDescription>
           </div>
 
