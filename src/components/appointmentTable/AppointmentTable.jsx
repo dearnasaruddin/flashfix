@@ -21,7 +21,9 @@ const AppointmentTable = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const itemPerPage = 6
     const currentItemsToShow = customizedTableData.slice((currentPage * itemPerPage) - itemPerPage, currentPage * itemPerPage)
-
+    const handlePagination = (pageNumber) => {
+        setCurrentPage(pageNumber)
+    }
     return (
         <div>
             <div className='max-md:max-w-[72dvw] mt-8 rounded-[16px] overflow-hidden'>
@@ -54,7 +56,7 @@ const AppointmentTable = () => {
                     </TableBody>
                 </Table>
             </div>
-            <Pagination totalItems={customizedTableData.length} itemPerPage={itemPerPage} currentPage={currentPage} onPageChange={setCurrentPage}/>
+            <Pagination totalItems={customizedTableData.length} itemPerPage={itemPerPage} currentPage={currentPage} onPageChange={handlePagination} />
         </div>
     )
 }
