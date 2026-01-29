@@ -43,13 +43,13 @@ const Pagination = ({ totalItems, itemPerPage, currentPage, onPageChange }) => {
                 <span className='font-medium'>Previous</span>
             </button>
 
-            <button onClick={() => onPageChange(1)} className={`size-5 md:size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == 1 ? 'bg-[#A6C8FF]' : 'cursor-pointer hover:bg-gray-200'}`}>1</button>
+            <button onClick={() => onPageChange(1)} className={`size-5 md:size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == 1 ? 'bg-[#A6C8FF]' : 'cursor-pointer hover:bg-primary'}`}>1</button>
 
             {pageNumbers.map((pageNumber, index) => (
-                <button key={index} disabled={pageNumber == '...'} onClick={() => onPageChange(pageNumber)} className={`size-5 md:size-10 text-[#0F62FE]  ${currentPage == pageNumber ? 'bg-[#A6C8FF]' : pageNumber != '...' && 'cursor-pointer hover:bg-gray-200'}`} >{pageNumber}</button>
+                <button key={index} disabled={pageNumber == '...'} onClick={() => onPageChange(pageNumber)} className={`size-5 md:size-10 text-[#0F62FE]  ${currentPage == pageNumber ? 'bg-[#A6C8FF]' : pageNumber != '...' && 'cursor-pointer hover:bg-primary'}`} >{pageNumber}</button>
             ))}
 
-            <button onClick={() => onPageChange(totalPages)} className={`size-5 md:size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == totalPages ? 'bg-[#A6C8FF]' : 'hover:bg-gray-200'}`}>{totalPages}</button>
+            <button onClick={() => onPageChange(totalPages)} className={`size-5 md:size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == totalPages ? 'bg-[#A6C8FF]' : 'hover:bg-primary'}`}>{totalPages}</button>
             
             <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages} className={`flex items-center md:gap-2 p-2 ${currentPage == totalPages ? 'text-[#697077]' : 'text-[#0F62FE]'} cursor-pointer`}>
                 <span className='font-medium'>Next</span>

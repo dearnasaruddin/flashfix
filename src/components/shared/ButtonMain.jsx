@@ -11,7 +11,7 @@ const ButtonMain = ({ icon, text, routeName, className, onClick, profile }) => {
     rounded-[12px]
     bg-dot-img
     cursor-pointer
-    ${icon ? 'flex items-center gap-4' : ''}
+    ${icon ? 'flex items-center gap-2 md:gap-4' : ''}
     ${pathname == routeName || pathname.includes(text.toLocaleLowerCase()) ?
             'inset-shadow border-b border-[rgba(255,255,255,0.50)]'
             :
@@ -45,7 +45,7 @@ const ButtonMain = ({ icon, text, routeName, className, onClick, profile }) => {
                     </span>
                 }
                 {/* ============ Text ============ */}
-                <span className="font-inter font-medium text-base leading-[150%] text-white whitespace-nowrap">
+                <span className="font-inter font-medium text-sm md:text-base leading-[150%] text-white whitespace-nowrap">
                     {text}
                 </span>
             </button>

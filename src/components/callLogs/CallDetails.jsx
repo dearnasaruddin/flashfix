@@ -56,7 +56,7 @@ const CallDetails = ({ data }) => {
 
           <Button
             className={
-              "audio-gradient flex justify-center w-full rounded-[14px] border h-12.5 border-[#AD46FF30] "
+              "audio-gradient flex justify-center w-full rounded-[14px] border md:h-12.5 border-[#AD46FF30] "
             }
           >
             <PlayIcon />

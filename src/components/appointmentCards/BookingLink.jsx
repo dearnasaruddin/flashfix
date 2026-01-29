@@ -25,7 +25,7 @@ const BookingLink = () => {
                     https://techstore.com/book?id=store123
                 </div>
                 <ButtonMain
-                    className={ 'inset-shadow-primary bg-linear-to-b from-[#152252] to-[#111B3C] py-3.25 px-3 h-12.5 w-37.25 '}
+                    className={ 'inset-shadow-primary bg-linear-to-b from-[#152252] to-[#111B3C] md:py-3.25 px-3 md:h-12.5 md:w-37.25 '}
                     icon={copied ?
                         <Check className={`${copied ? 'scale-100' : ' scale-0'}  transition-all duration-500 md:text-2xl`} />
                         :
