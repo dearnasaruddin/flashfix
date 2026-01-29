@@ -5,8 +5,8 @@ import PaperIcon from "@/assets/icons/PaperIcon";
 
 const CallDetails = ({ data }) => {
   return (
-    <div className="rounded-[12px] color-card  ">
-      <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-borderColor ">
+    <div className="rounded-[12px] color-card grow md:max-w-1/2">
+      <h3 className="font-inter font-normal text-[20px] leading-7 text-white md:mb-4 cursor-pointer p-4 border-b border-borderColor ">
         Call Details
       </h3>
 
@@ -14,24 +14,24 @@ const CallDetails = ({ data }) => {
         <div className="flex flex-wrap gap-4 font-inter font-normal justify-between ">
           <div className="w-[48%]">
             <span className="text-gray text-sm leading-5 ">Phone Number</span>
-            <p className="text-white text-base leading-6 ">
+            <p className="text-white max-md:whitespace-nowrap max-md:mt-1 text-sm md:text-base md:leading-6 ">
               {data.phoneNumber}
             </p>
           </div>
 
           <div className="w-[48%]">
             <span className="text-gray text-sm leading-5 ">Duration</span>
-            <p className="text-white text-base leading-6 ">{data.duration}</p>
+            <p className="text-white max-md:whitespace-nowrap max-md:mt-1 text-sm md:text-base md:leading-6 ">{data.duration}</p>
           </div>
 
           <div className="w-[48%]">
             <span className="text-gray text-sm leading-5 ">Date & Time</span>
-            <p className="text-white text-base leading-6 ">{data.dateTime}</p>
+            <p className="text-white max-md:whitespace-nowrap max-md:mt-1 text-sm md:text-base md:leading-6 ">{data.dateTime}</p>
           </div>
 
           <div className="w-[48%]">
             <span className="text-gray text-sm leading-5 ">Issue Type</span>
-            <p className="text-white text-base leading-6 ">{data.issueType}</p>
+            <p className="text-white max-md:whitespace-nowrap max-md:mt-1 text-sm md:text-base md:leading-6 ">{data.issueType}</p>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ const CallDetails = ({ data }) => {
 
         <div>
           <span className="text-gray text-sm leading-5 ">Outcome</span>
-          <p className="text-white text-base leading-6 ">{data.outcome}</p>
+          <p className="text-white max-md:whitespace-nowrap max-md:mt-1 text-sm md:text-base md:leading-6 ">{data.outcome}</p>
         </div>
 
 

@@ -33,7 +33,7 @@ const Graph = () => {
   const [showPanel, setShowPanel] = useState(false);
   const [range, setRange] = useState("This Week");
   return (
-    <Card className={"min-w-292.5 max-h-106.5 bg-[#0F172B50] border border-borderColor "}>
+    <Card className={"md:min-w-292.5 max-h-106.5 bg-[#0F172B50] border border-borderColor "}>
       <CardHeader>
         <div className="flex justify-between">
           {/* ========= Graph Heading & subHeading ========= */}

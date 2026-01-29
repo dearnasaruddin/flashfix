@@ -8,7 +8,7 @@ const MenuItems = () => {
             {
                 menuItemsData.map((item, index) => (
                     <li key={index}>
-                        <ButtonMain icon={item.icon} text={item.text} routeName={item.routeName}/>
+                        <ButtonMain icon={item.icon} text={item.text} routeName={item.routeName} />
                     </li>
                 ))
             }

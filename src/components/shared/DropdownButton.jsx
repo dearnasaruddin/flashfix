@@ -20,13 +20,13 @@ const DropdownButton = ({ items ,backgroundColor='#111B3D', height }) => {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className={`bg-[${backgroundColor}] hover:bg-[#1D293D50] hover:text-white border border-borderColor hover:border-[#2B7FFF50] text-white px-8 ${height ? 'h-10' : 'h-12.5'} py-4 font-inter text-base  leading-5 font-normal `}
+          className={`bg-[${backgroundColor}] hover:bg-[#1D293D50] hover:text-white border border-borderColor hover:border-[#2B7FFF50] text-white px-8 ${height ? 'h-10' : 'h-12.5'} py-4 font-inter text-xs md:text-base  leading-5 font-normal `}
         >
           {active} <DropDownIcon />
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-40 bg-[#0F172B] border border-borderColor text-white ">
+      <DropdownMenuContent className="md:w-40 bg-[#0F172B] border border-borderColor text-white ">
         <DropdownMenuGroup>
           <DropdownMenuLabel></DropdownMenuLabel>
 

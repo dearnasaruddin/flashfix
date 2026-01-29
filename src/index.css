@@ -15,11 +15,14 @@
   --color-coral-red: #ff6467;
   --color-light-gray: #7a8ba4;
   --color-card-bg: #0f172b50;
+  --breakpoint-xxs: 360px;
+  --breakpoint-xs: 400px;
 }
 
 .color-card {
   @apply bg-[#0F172B50] border border-borderColor;
 }
+
 .audio-gradient {
   @apply bg-linear-to-r from-[#ad46ff33] to-[#f6339a33];
 }

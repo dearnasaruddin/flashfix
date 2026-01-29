@@ -36,17 +36,17 @@ const Pagination = ({ totalItems, itemPerPage, currentPage, onPageChange }) => {
 
 
     return (
-        <div className='mt-11.5 mb-4.5 flex justify-center items-center'>
-            <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1} className={`flex items-center gap-2 p-2 ${currentPage == 1 ? 'text-[#697077] cursor-default' : 'text-[#0F62FE] cursor-pointer'} `}>
+        <div className='mt-4 md:mt-11.5 max-md:pb-8 md:mb-4.5 flex justify-center items-center text-xs md:text-base'>
+            <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1} className={`flex items-center md:gap-2 p-2 ${currentPage == 1 ? 'text-[#697077] cursor-default' : 'text-[#0F62FE] cursor-pointer'} `}>
                 <ChevronLeft />
                 <span className='font-medium'>Previous</span>
             </button>
-            <button onClick={() => onPageChange(1)} className={`size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == 1 ? 'bg-[#A6C8FF]' : 'cursor-pointer hover:bg-gray-200'}`}>1</button>
+            <button onClick={() => onPageChange(1)} className={`size-5 md:size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == 1 ? 'bg-[#A6C8FF]' : 'cursor-pointer hover:bg-gray-200'}`}>1</button>
             {pageNumbers.map((pageNumber, index) => (
-                <button key={index} disabled={pageNumber == '...'} onClick={() => onPageChange(pageNumber)} className={`size-10 text-[#0F62FE]  ${currentPage == pageNumber ? 'bg-[#A6C8FF]' : pageNumber != '...' && 'cursor-pointer hover:bg-gray-200'}`} >{pageNumber}</button>
+                <button key={index} disabled={pageNumber == '...'} onClick={() => onPageChange(pageNumber)} className={`size-5 md:size-10 text-[#0F62FE]  ${currentPage == pageNumber ? 'bg-[#A6C8FF]' : pageNumber != '...' && 'cursor-pointer hover:bg-gray-200'}`} >{pageNumber}</button>
             ))}
-            <button onClick={() => onPageChange(1)} className={`size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == totalPages ? 'bg-[#A6C8FF]' : 'hover:bg-gray-200'}`}>{totalPages}</button>
-            <button disabled={currentPage === totalPages} className={`flex items-center gap-2 p-2 ${currentPage == totalPages ? 'text-[#697077]' : 'text-[#0F62FE]'} cursor-pointer`}>
+            <button onClick={() => onPageChange(1)} className={`size-5 md:size-10 flex justify-center items-center text-[#0F62FE] ${currentPage == totalPages ? 'bg-[#A6C8FF]' : 'hover:bg-gray-200'}`}>{totalPages}</button>
+            <button disabled={currentPage === totalPages} className={`flex items-center md:gap-2 p-2 ${currentPage == totalPages ? 'text-[#697077]' : 'text-[#0F62FE]'} cursor-pointer`}>
                 <span className='font-medium'>Next</span>
                 <ChevronRight />
             </button>

@@ -6,7 +6,7 @@ const SettingsPage = () => {
   return (
     <>
       <div className="pt-6 max-w-137.5">
-        <div className="font-inter font-normal text-2xl leading-9 text-white flex gap-x-16 ml-3">
+        <div className="font-inter font-normal md:text-2xl md:leading-9 text-white flex gap-x-16 ml-3">
           <button>Profile</button>
           <button>Password Settings</button>
         </div>
@@ -27,7 +27,9 @@ const SettingsPage = () => {
               <ButtonMain
                 text="Edit Profile"
                 routeName={'/settings/profile'}
-                className={'text-xs inset-shadow border-b border-[rgba(255,255,255,0.50)] px-2.5 py-1.5'}
+                profile={true}
+                className={'text-xs inset-shadow border-b border-[rgba(255,255,255,0.50)] px-2.5 py-1.5'
+                }
               />
             </div>
           </div>
@@ -37,10 +39,10 @@ const SettingsPage = () => {
                 key={id}
                 className="flex items-center  py-4 border-b border-[#192D71] last:border-transparent"
               >
-                <p className="font-inter font-medium text-[20px] leading-[150%] text-white w-51.5 ">
+                <p className="w-30 md:w-51.5 font-inter font-medium text-sm md:text-xl leading-[150%] text-white  ">
                   {item.text}
                 </p>
-                <p className="font-inter font-normal text-[20px] leading-[150%] text-white">
+                <p className="max-md:max-w-50 font-inter font-normal text-sm md:text-xl leading-[150%] text-white">
                   {item.para}
                 </p>
               </div>

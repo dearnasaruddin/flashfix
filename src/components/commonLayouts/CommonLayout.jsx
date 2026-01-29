@@ -9,7 +9,7 @@ const CommonLayout = () => {
             <Sidebar />
             <div className="grow">
                 <Header />
-                <div className="ml-6">
+                <div className="ml-2 md:ml-6">
                     <Outlet />
                 </div>
             </div>

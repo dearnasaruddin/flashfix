@@ -12,7 +12,7 @@ const DashBoardPage = () => {
       <div className='py-6'>
         <Graph/>
       </div>
-      <div className='flex gap-6 w-full'>
+      <div className='flex max-md:flex-wrap gap-6 w-full'>
         <RecentActivity />
         <Request />
       </div>

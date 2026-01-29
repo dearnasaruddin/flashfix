@@ -3,7 +3,7 @@ import React from 'react'
 
 const RecentActivity = () => {
   return (
-      <div className="grow max-w-1/2 p-6 rounded-2xl bg-card-bg border border-borderColor">
+      <div className="grow md:max-w-1/2 p-6 rounded-2xl bg-card-bg border border-borderColor">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
         Recent Activity
       </h3>
