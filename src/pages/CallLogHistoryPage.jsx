@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { SearchIcon } from "lucide-react";
-
 import { callLogsData, issueArray, callType, dateArray } from "@/projectData/callLogsData";
-import SearchBar from "@/components/callLogs/SearchBar";
-import CallList from "@/components/callLogs/CallList";
+import SearchBar from "@/components/callLogsHistory/SearchBar";
+import CallList from "@/components/callLogsHistory/CallList";
 import DropdownButton from "@/components/shared/DropdownButton";
-import CallDetails from "@/components/callLogs/CallDetails";
+import CallDetails from "@/components/callLogsHistory/CallDetails";
 
 
 const CallLogHistoryPage = () => {
@@ -13,30 +12,35 @@ const CallLogHistoryPage = () => {
   const [active, setActive] = useState(callLogsData[0])
 
   return (
-    <div className="pr-4 pt-6">
+    <div className="pr-2 md:pr-4 pt-6">
 
-      {/* ============== Search bar & Dropdowns ============== */}
-      <div className="w-full flex max-md:flex-wrap justify-between gap-6 mb-5.5">
-        <div className="md:max-w-1/2 grow lg:pr-6 max-h-12.5">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6">
+
+        {/* ============== Dropdowns ============== */}
+        <div className="grow max-h-12.5">
           <SearchBar
             icon={<SearchIcon />}
             className={"color-card pl-4 h-12.5  "}
           />
         </div>
-        <div className="md:max-w-1/2 flex gap-1 md:gap-6 justify-end">
-          <DropdownButton className={'bg-card-bg h-12.5 sm:w-39.5'} items={callType} />
-          <DropdownButton className={'bg-card-bg h-12.5 sm:w-39.5'} items={issueArray} />
-          <DropdownButton className={'bg-card-bg h-12.5 sm:w-39.5'} items={dateArray} />
+
+
+        {/* ============== Dropdowns ============== */}
+        <div className="flex max-xs:flex-wrap gap-1 lg:gap-6 xxs:max-xs:justify-between md:justify-end">
+          <DropdownButton className={'bg-card-bg h-12.5 lg:max-[1070px]:text-sm min-[1360px]:w-39.5'} items={callType} />
+          <DropdownButton className={'bg-card-bg h-12.5 lg:max-[1070px]:text-sm min-[1360px]:w-39.5'} items={issueArray} />
+          <DropdownButton className={'bg-card-bg h-12.5 lg:max-[1070px]:text-sm min-[1360px]:w-39.5'} items={dateArray} />
         </div>
+
+
+        {/* ============== Call list & Call Details ============== */}
+        <div>
+          <CallList active={active} setActive={setActive} />
+        </div>
+        <CallDetails data={active} />
+
       </div>
 
-      {/* ============== Call list & Call Details ============== */}
-      <div className="flex max-md:flex-wrap justify-between gap-6 ">
-        <div className="flex max-md:flex-wrap gap-6 grow">
-          <CallList active={active} setActive={setActive} />
-          <CallDetails data={active} />
-        </div>
-      </div>
     </div>
   );
 }

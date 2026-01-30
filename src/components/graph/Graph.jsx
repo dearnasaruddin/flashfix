@@ -44,7 +44,7 @@ const Graph = () => {
 
           {/* ========= Graph Dropdown ========= */}
           <div>
-            <DropdownButton items={dropdownData} className={'h-10 w-35.5 bg-[#1D293D]'} />
+            <DropdownButton items={dropdownData} className={'h-10 md:w-35.5 bg-[#1D293D]'} />
           </div>
         </div>
       </CardHeader>

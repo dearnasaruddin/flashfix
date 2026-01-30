@@ -6,13 +6,17 @@ import { callLogsData } from "@/projectData/callLogsData";
 
 const CallList = ({ active, setActive }) => {
     return (
-        <div className="rounded-[12px] color-card grow md:max-w-1/2 ">
-            <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-borderColor ">
+        <div className="rounded-[12px] color-card grow">
+            <h3 className="font-inter font-normal text-xl leading-7 text-white mb-4 cursor-pointer p-4 border-b border-borderColor ">
                 Call list
             </h3>
+
             {callLogsData.map((item) => (
-                <div className={`max-md:relative md:flex justify-between p-4 ${item.id === active.id ? 'border-b-3 border-[#2B7FFF]' : 'border border-[#2B7FFF10]  cursor-pointer '} `} key={item.id} onClick={() => setActive(item)} >
+                <div className={`relative md:flex justify-between p-4 ${item.id === active.id ? 'border-b-3 border-[#2B7FFF]' : 'border border-[#2B7FFF10]  cursor-pointer '} `} key={item.id} onClick={() => setActive(item)} >
+
                     <div className="flex flex-col gap-5">
+
+                        {/* ============== Call Icon, Number, Date & Time ============== */}
                         <div className="flex gap-2 md:gap-4 ">
                             <div className="icon size size-10">
                                 <PhoneIconWithBG />
@@ -25,20 +29,27 @@ const CallList = ({ active, setActive }) => {
                             </div>
                         </div>
 
+
                         <div className="flex items-center max-md:gap-2 md:gap-4.5 max-sm:text-[10px] max-md:text-xs">
+
+                            {/* ============== Call Duration ============== */}
                             <div className="flex items-center gap-1 text-gray">
-                                <div className="">
+                                <div>
                                     <ClockLite />
                                 </div>
                                 <time>{item.duration}</time>
                             </div>
+
+                            {/* ============== Call Outcome ============== */}
                             <div className="flex items-center gap-1 text-gray">
-                                <div className="">
+                                <div>
                                     <TickIcon className={'size-4'} />
                                 </div>
                                 <p>{item.outcome}</p>
                             </div>
-                            <div className="">
+
+                            {/* ============== Issue Type Badge ============== */}
+                            <div>
                                 <Badge className="bg-borderColor text-info rounded-[4px] py-0.5 px-1 md:px-4 font-inter leading-5 text-xs md:text-sm ">
                                     {item.issueType}
                                 </Badge>
@@ -46,7 +57,9 @@ const CallList = ({ active, setActive }) => {
                         </div>
                     </div>
 
-                    <div className="absolute top-2 right-2">
+
+                    {/* ============== Call Type Badge ============== */}
+                    <div className="min-[380px]:absolute max-[380px]:mt-1.5 top-2 lg:top-4 right-2 lg:right-4">
                         <Badge
                             className={`rounded-sm md:rounded-[10px] py-1 px-1 md:px-2 font-inter leading-5 text-[10px] md:text-xs 
                                 ${item.callType === "AI Resolved" && "text-green bg-[#00C95020] border border-[#00C95030] "}
@@ -57,6 +70,7 @@ const CallList = ({ active, setActive }) => {
                             {item.callType}
                         </Badge>
                     </div>
+
                 </div>
             ))}
         </div>

@@ -35,7 +35,8 @@ const BookingLink = () => {
                         <Copy className={`${copied ? 'scale-0' : 'scale-100'} transition-all duration-500 md:text-2xl`} />
                     }
                     text={copied ? 'Copied' : 'Copy Link'}
-                    onClick={handleCopy} />
+                    onClick={handleCopy}
+                />
             </div>
         </div>
     )

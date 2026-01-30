@@ -1,4 +1,3 @@
-
 import { appointmentsCardData } from "@/projectData/appointmentCardData"
 import CardItem from "../shared/CardItem"
 

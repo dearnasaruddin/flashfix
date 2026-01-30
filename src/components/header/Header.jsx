@@ -8,7 +8,7 @@ const Header = () => {
         <header className="sticky top-0 left-0 z-50 bg-primary w-full flex items-center justify-between px-6 py-2">
 
             {/* ========== Header Text ========== */}
-            <h1 className=" font-inter font-normal text-xl lg:text-[32px] lg:leading-9 text-white">
+            <h1 className=" font-inter font-normal xs:text-xl lg:text-[32px] lg:leading-9 text-white">
                 {pathname == '/' && 'Dashboard Overview'}
                 {pathname == '/call-log' && 'Call Logs & History'}
                 {pathname == '/appointments' && 'Appointments'}

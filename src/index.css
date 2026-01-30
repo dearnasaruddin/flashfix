@@ -3,6 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+/* ============================================================ My Custom Variables and CSS ============================================================ */
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-arimo: "Arimo", sans-serif;
@@ -25,6 +27,18 @@
 
 .audio-gradient {
   @apply bg-linear-to-r from-[#ad46ff33] to-[#f6339a33];
+}
+
+.table-css {
+  @apply max-xxs:max-w-[68dvw] xxs:max-xs:max-w-[72dvw] xs:max-sm:max-w-[78dvw] sm:max-lg:max-w-[85dvw] max-lg:mx-auto mt-8 rounded-[16px] overflow-hidden
+}
+
+.table-head-css{
+  @apply text-white py-4.5 font-inter text-xs xl:text-sm xl:leading-5 text-center
+}
+
+.table-cell-css{
+  @apply py-4.5 font-arimo text-xs xl:text-sm xl:leading-5
 }
 
 .bg-dot-img {
@@ -54,6 +68,13 @@
     inset 0 0 20px #d2eaff88
 }
 
+.recharts-wrapper text {
+  fill: #fff !important;
+  opacity: 1 !important;
+}
+
+
+/* ============================================================ Variables from ShadCn ============================================================ */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -172,9 +193,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-.recharts-wrapper text {
-  fill: #fff !important;
-  opacity: 1 !important;
 }
