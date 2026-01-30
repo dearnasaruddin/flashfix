@@ -64,7 +64,6 @@ Once started, open http://localhost:5173 in your browser.
 
 ### Project Structure
 
-* `public/` - Static assets and files(like logo).
 * `src/` - Main source code.
 * `src/assets/` - Assets (images and icons).
 * `src/components/` -  UI components.
