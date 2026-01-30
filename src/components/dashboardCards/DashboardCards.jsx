@@ -4,10 +4,10 @@ import CardItem from "../shared/CardItem"
 const DashboardCards = () => {
 
     return (
-        <div className="flex items-center justify-center md:justify-between gap-2.5 md:gap-6 flex-wrap">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 md:gap-6">
             {
                 dashboardCardsData.map((card, index) =>
-                    <div key={index} className="min-w-34 max-w-[40%] max-md:h-37.5 md:w-[31.2%] md:grow">
+                    <div key={index}>
                         <CardItem title={card.title} value={card.value} percent={card.percent} posIcon={card.icon} failed={card.failed} />
                     </div>
                 )

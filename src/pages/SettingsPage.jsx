@@ -5,6 +5,7 @@ const SettingsPage = () => {
 
   return (
     <div className="pt-6 ">
+      {/* ============== Profile Info ============== */}
       {profileData.map((item, id) => (
         <div
           key={id}

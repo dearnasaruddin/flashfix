@@ -6,7 +6,7 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-arimo: "Arimo", sans-serif;
-  --color-primary: #111b3c;
+  --color-primary: #111B3C;
   --color-borderColor: #2B7FFF20;
   --color-green: #05df72;
   --color-gray: #90a1b9;
@@ -20,7 +20,7 @@
 }
 
 .color-card {
-  @apply bg-[#0F172B50] border border-borderColor;
+  @apply bg-card-bg border border-borderColor;
 }
 
 .audio-gradient {

@@ -33,18 +33,18 @@ const Graph = () => {
   const [showPanel, setShowPanel] = useState(false);
   const [range, setRange] = useState("This Week");
   return (
-    <Card className={"md:min-w-292.5 max-h-106.5 bg-[#0F172B50] border border-borderColor "}>
+    <Card className={"md:min-w-full max-h-106.5 bg-[#0F172B50] border border-borderColor "}>
       <CardHeader>
         <div className="flex justify-between">
           {/* ========= Graph Heading & subHeading ========= */}
           <div>
-            <CardTitle className={"mb-1 text-white max-md:leading-[150%]"}>Call Trends - This Week</CardTitle>
-            <CardDescription className={'text-sm leading-5 text-[#90A1B9]'}>Total: 472 calls</CardDescription>
+            <CardTitle className={"mb-1 max-md:text-sm text-white max-md:leading-[150%]"}>Call Trends - This Week</CardTitle>
+            <CardDescription className={'text-xs md:text-sm leading-5 text-[#90A1B9]'}>Total: 472 calls</CardDescription>
           </div>
 
           {/* ========= Graph Dropdown ========= */}
           <div>
-            <DropdownButton items={dropdownData} backgroundColor="#1D293D" height='40' />
+            <DropdownButton items={dropdownData} className={'h-10 w-35.5 bg-[#1D293D]'} />
           </div>
         </div>
       </CardHeader>

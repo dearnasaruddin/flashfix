@@ -73,7 +73,7 @@ const CallDetails = ({ data }) => {
         {
           data.transcript.length !== 0 ?
           <>
-             <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-4  ">
+             <div className="bg-[#1D293D50] rounded-[14px] flex flex-col gap-3 p-4  ">
             {
               data.transcript.map((item, index) => (
                 <div key={index}>

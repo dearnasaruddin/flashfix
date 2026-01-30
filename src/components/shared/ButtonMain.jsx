@@ -31,7 +31,7 @@ const ButtonMain = ({ icon, text, routeName, className, onClick, profile }) => {
                     </span>
                 }
                 {/* ============ Text ============ */}
-                <span className={`${profile ? '' : 'max-md:hidden '} font-inter font-medium leading-[150%] text-white whitespace-nowrap`}>
+                <span className={`${profile ? '' : 'max-lg:hidden '} font-inter font-medium leading-[150%] text-white whitespace-nowrap`}>
                     {text}
                 </span>
             </Link >
@@ -45,7 +45,7 @@ const ButtonMain = ({ icon, text, routeName, className, onClick, profile }) => {
                     </span>
                 }
                 {/* ============ Text ============ */}
-                <span className="font-inter font-medium text-sm md:text-base leading-[150%] text-white whitespace-nowrap">
+                <span className=" max-sm:hidden font-inter font-medium text-sm md:text-base leading-[150%] text-white whitespace-nowrap">
                     {text}
                 </span>
             </button>

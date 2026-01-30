@@ -11,7 +11,7 @@ const AppointmentsPage = () => {
       <div className='pt-6'>
         <BookingLink/>
       </div>
-      <div className=''>
+      <div>
         <AppointmentTable />
       </div>
     </div>

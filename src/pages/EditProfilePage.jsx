@@ -4,7 +4,7 @@ const EditProfilePage = () => {
   return (
     <div>
       {/* ===================== profile form ===================== */}
-      <div className="grid grid-cols-1 md:grid-cols-2 max-md:space-y-2 md:gap-y-6 md:gap-x-14 mt-8 md:mt-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 max-md:space-y-2 md:gap-y-6 md:gap-x-14 md:max-xl:mr-2 mt-8 md:mt-14">
         {profileForm.map((field, index) => (
           <div key={index} className="flex flex-col gap-1 md:gap-2">
             <label className="font-inter font-medium text-xs xs:text-sm md:text-lg leading-[150%] max-md:ml-1 text-white">
@@ -21,8 +21,8 @@ const EditProfilePage = () => {
           </div>
         ))}
       </div>
-      {/* ===================== profile button ===================== */}
-
+      
+      {/* ===================== save button ===================== */}
       <div className="mt-5 md:mt-20 flex items-center justify-center cursor-pointer">
         <button className="py-1.5 md:py-2 max-md:w-full md:px-39 bg-[#00C950] font-inter font-bold text-sm md:text-xl leading-[150%] text-white rounded-[12px]">
           Save

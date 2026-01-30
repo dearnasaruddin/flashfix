@@ -14,25 +14,26 @@ const CallLogHistoryPage = () => {
 
   return (
     <div className="pr-4 pt-6">
+
+      {/* ============== Search bar & Dropdowns ============== */}
       <div className="w-full flex max-md:flex-wrap justify-between gap-6 mb-5.5">
-        <div className="md:max-w-1/2 grow lg:pr-6">
+        <div className="md:max-w-1/2 grow lg:pr-6 max-h-12.5">
           <SearchBar
             icon={<SearchIcon />}
-            className={"color-card pl-4 h-12.5   "}
+            className={"color-card pl-4 h-12.5  "}
           />
         </div>
         <div className="md:max-w-1/2 flex gap-1 md:gap-6 justify-end">
-          <DropdownButton items={callType} />
-          <DropdownButton items={issueArray} />
-          <DropdownButton items={dateArray} />
+          <DropdownButton className={'bg-card-bg h-12.5 sm:w-39.5'} items={callType} />
+          <DropdownButton className={'bg-card-bg h-12.5 sm:w-39.5'} items={issueArray} />
+          <DropdownButton className={'bg-card-bg h-12.5 sm:w-39.5'} items={dateArray} />
         </div>
       </div>
+
+      {/* ============== Call list & Call Details ============== */}
       <div className="flex max-md:flex-wrap justify-between gap-6 ">
-
         <div className="flex max-md:flex-wrap gap-6 grow">
-
           <CallList active={active} setActive={setActive} />
-
           <CallDetails data={active} />
         </div>
       </div>
