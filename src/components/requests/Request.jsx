@@ -4,7 +4,7 @@ import RequestBar from './RequestBar'
 
 const Request = () => {
   return (
-    <div className='grow font-arimo p-6 rounded-2xl bg-card-bg border border-borderColor'>
+    <div className='grow font-arimo p-6 rounded-[12px] bg-card-bg border border-borderColor'>
         <Subheading/>
         <div className='mt-4 space-y-3'>
             <RequestBar/>

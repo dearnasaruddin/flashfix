@@ -1,14 +1,14 @@
 import activitiesData from '@/projectData/activitiesData'
 import React from 'react'
+import Subheading from '../shared/Subheading'
 
 const RecentActivity = () => {
   return (
-      <div className="grow md:max-w-1/2 p-6 rounded-2xl bg-card-bg border border-borderColor">
-      <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
-        Recent Activity
-      </h3>
+      <div className="grow md:max-w-1/2 p-6 rounded-[12px] bg-card-bg border border-borderColor">
 
-      <div className="flex flex-col gap-y-3">
+      <Subheading content='Recent Activity' className={'font-arimo'}/>
+
+      <div className="flex flex-col gap-y-3 mt-4">
         {activitiesData.map((activity, index) => (
           <div
             key={index}
@@ -19,7 +19,7 @@ const RecentActivity = () => {
             ></div>
 
             <div>
-              <p className="font-inter font-normal text-[14px] leading-5 text-white mb-1">
+              <p className="font-inter font-normal text-sm leading-5 text-white mb-1">
                 {activity.text}
               </p>
               <p className="font-inter font-normal text-xs leading-4 text-light-gray">

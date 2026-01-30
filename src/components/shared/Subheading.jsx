@@ -1,8 +1,8 @@
-import React from 'react'
+import {twMerge} from 'tailwind-merge'
 
-const Subheading = ({content='', fontFamily}) => {
+const Subheading = ({content='Top Repair Requests', className}) => {
   return (
-    <h3 className={`${fontFamily ? 'font-arimo': 'font-inter'} text-xl leading-7 text-white`}>Top Repair Requests{content}</h3>
+    <h3 className={twMerge('font-inter text-xl leading-7 text-white', className)}>{content}</h3>
   )
 }
 
