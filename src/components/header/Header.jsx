@@ -16,9 +16,11 @@ const Header = () => {
             </h1>
 
             {/* ========== Bell Icon & Profile Image ========== */}
-            <div className="flex items-center justify-center space-x-2 lg:space-x-10">
-                <BellIcon />
-                <div className="max-lg:w-10">
+            <div className="flex items-center justify-center space-x-2 lg:space-x-6">
+                <div className="cursor-pointer">
+                    <BellIcon />
+                </div>
+                <div className="w-10 lg:w-12 cursor-pointer">
                     <img src={profileImg} alt="profileImg" />
                 </div>
             </div>
